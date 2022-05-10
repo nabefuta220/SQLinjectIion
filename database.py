@@ -1,5 +1,6 @@
 import sqlite3
 
+
 class database:
 
     def __init__(self, db: str):
@@ -25,8 +26,6 @@ class database:
         """
         self.cur.execute(command)
         self.con.commit()
-
-
 
     def __del__(self):
         """

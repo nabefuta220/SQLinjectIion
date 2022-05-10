@@ -1,6 +1,7 @@
 
 from database import database
 
+
 class cliant1(database):
     def __init__(self,db: str ,table:str):
         """
@@ -84,6 +85,7 @@ class cliant1(database):
 
 if __name__ == '__main__':
     cliant = cliant1('cliant.db', 'cliant1')
-    cliant.login()
     cliant.show()
+    cliant.login()
+    
 
